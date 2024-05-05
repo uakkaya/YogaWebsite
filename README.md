@@ -6,8 +6,8 @@ Build: docker build -t <name> .
 Run: docker run -p 5000:5000 <name>
 Remove Images: docker image prune
 
-In Root directory: docker run -p 5000:5000 -v ${pwd/PWD}/src:/app/src -c ${pwd/PWD}/app.py:/app/app.py <name>
-In Root directory: docker run -p 5000:5000 -v ${pwd/PWD}/dist:/app/dist -c ${pwd/PWD}/app.py:/app/app.py <name>
+In Root directory: docker run -p 5000:5000 -v ${pwd/PWD}/src:/app/src -v ${pwd/PWD}/app.py:/app/app.py <name>
+In Root directory: docker run -p 5000:5000 -v ${pwd/PWD}/dist:/app/dist -v ${pwd/PWD}/app.py:/app/app.py <name>
 
 
 # NPM Stuff
