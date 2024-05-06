@@ -1,14 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Website</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet">
     <script src="{{ url_for('static', filename='js/bundle.js') }}"></script>
 </head>
+
 <body>
-    <h1>Welcome to my Yeah</h1>
-    <p>komm schon</p>
-    <a href="#" class="btn btn-primary text-white">Test</a>
+    <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/img/PrimaryLogo.svg" alt="Logo" width="199px" height="39px" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mx-auto">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link d-flex align-items-center gap-2" href="#">
+                        <span>Services</span>
+                        <img src="/img/ArrowDown.svg" alt="sub menu services" width="14px" height="100%" />
+                    </a>
+                    <a class="nav-link d-flex align-items-center gap-2" href="#">
+                        <span>Our Facility</span>
+                        <img src="/img/ArrowDown.svg" alt="sub menu our Facility" width="14px" height="100%" />
+                    </a>
+                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">Contact</a>
+                </div>
+                <a class="btn btn-primary d-flex align-items-center gap-2">
+                    <img src="/img/Basket.svg" alt="Basket" width="14px" height="100%" />
+                    <span>Shop Now</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <section class="p-7 slide-section" style="background-image: url(/img/hero-slide.webp);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-6">
+                    <h1 class="display-3 mb-5">Yoga First <span class="d-block">Fitness Always</span></h1>
+                    <p class="pe-lg-4 lh-lg fs-5 mb-5">
+                        Welcome to Great Fitness, Los Angeles' premier destination for yoga and fitness enthusiasts.
+                        Nestled in the vibrant heart of the city, we offer a sanctuary where mind, body, and spirit align.
+                    </p>
+                    <div class="d-flex flex-column flex-lg-row gap-3 align-items-center">
+                        <a href="#" class="btn btn-primary btn-lg fw-bold border-0">Book A Session</a>
+                        <a href="#" class="btn btn-transparent btn-lg d-flex align-items-center gap-3 fw-bold border-0 shadow-none">
+                          <span class="lh-1 mt-n1">Contact Us</span>
+                          <img src="/img/ArrowRight.svg" width="25px" height="25px" alt="Contact Us Arrow Right" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>

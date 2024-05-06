@@ -18,16 +18,18 @@ gulp.task('css', function() {
     return gulp.src('src/css/*.css')
         .pipe(gulp.dest('dist/css/'));
 });
+
 //Webp Conversion From JPG
 gulp.task('webp', function () {
     return gulp.src('src/img/*.jpg')
-    .pipe(webp({ quality: 98 }))
+        .pipe(webp({ quality: 98 }))
         .pipe(gulp.dest('dist/img/'));
 });
+
 //Webp Conversion From PNG
 gulp.task('webpPng', function () {
     return gulp.src('src/img/*.png')
-    .pipe(webp({ quality: 98 }))
+        .pipe(webp({ quality: 98 }))
         .pipe(gulp.dest('dist/img/'));
 });
 

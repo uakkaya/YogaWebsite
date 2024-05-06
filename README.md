@@ -27,3 +27,5 @@ npm i --save-dev sass-loader
 npm i --save-dev browser-sync
 
 
+# Comment under Video
+- Video for animated "Our Services" area (2:30:00)
